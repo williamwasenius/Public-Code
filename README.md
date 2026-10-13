@@ -41,7 +41,7 @@ The Player Container hosts the `PlayerController` script, which is the central c
 
 On startup, it queries the Selection Manager for the chosen mech index and retrieves the corresponding `MechStatsSO` scriptable object. From this, it sets the mech's health and armor values on the `DestructibleScript` component, and instantiates the mech's 3D model as a child object. Once the model is loaded, it retrieves the `FetchMechComponentsScript` from the newly created child hierarchy, which provides references to the mech's key components such as the animator, aim pivot, weapon hardpoints, and animation rig.
 
-The `PlayerController` then handles all player input each frame: movement, weapon firing, the stomp ability, and toggling weapon aim elevation.
+The `PlayerController` then handles all player input: movement, weapon firing, the stomp ability, and toggling weapon aim elevation.
 
 ### The Mech Container
 
